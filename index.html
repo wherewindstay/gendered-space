@@ -694,7 +694,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   /* 수치 블록은 지도 위에 얹는다 (소현 요청 2026-08-08) — 지도 조작을 막지 않도록
      pointer-events 를 끄고, 줌 버튼(좌상단)을 피해 우상단에 붙인다 */
   .ov{position:absolute;top:50px;right:11px;z-index:900;display:flex;flex-direction:column;gap:6px;
-      pointer-events:none;width:246px;max-width:60%}
+      pointer-events:none;width:208px;max-width:56%}
   .ov.bl{top:auto;left:11px;right:auto;bottom:12px;width:auto}
   .stat{background:color-mix(in srgb,var(--panel) 90%,transparent);border:1px solid var(--line);
     border-radius:9px;padding:6px 10px 7px;backdrop-filter:blur(4px);box-shadow:0 1px 6px rgba(0,0,0,.07)}
@@ -730,7 +730,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <div class="stat"><div class="k">청년 남녀 인구중심점 거리</div><div class="v" id="s1">–</div></div>
         <div class="stat"><div class="k">전 연령 남녀 거리</div><div class="v" id="s2">–</div></div>
         <div class="mini"><div class="k">남녀 인구중심점 사이 거리 (km)</div>
-          <svg id="svgd" viewBox="0 0 300 128"></svg></div>
+          <svg id="svgd" viewBox="0 0 240 128"></svg></div>
       </div>
       <div class="ov bl"><div class="stat"><div class="lgd">
         <span><i style="border-color:#362C21"></i>전체 인구</span>
@@ -745,7 +745,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <div class="v sm" id="s3">–</div></div>
         <div class="mini" id="sggbox">
           <div class="k"><b id="lgnm"></b> 성비 추이</div>
-          <svg id="svgs" viewBox="0 0 300 128"></svg></div>
+          <svg id="svgs" viewBox="0 0 240 128"></svg></div>
       </div>
       <div class="ov bl"><div class="stat">
         <div class="k" style="margin-bottom:3px">성비 (여성 100명당 남성)</div>
@@ -831,9 +831,9 @@ $('ramp').innerHTML =
   + `<div style="width:auto;padding-left:6px;align-self:flex-end">여초 ← → 남초</div>`;
 
 // ── 지도 위 미니 그래프 (좌: 남녀 거리 / 우: 선택 시군구 성비) ────────
-// 두 그래프 모두 같은 좌표계를 쓴다. 300×128 은 지도를 가리지 않는 선에서
-// 눈금 두 개와 연도 라벨이 겹치지 않는 최소 크기다.
-const CW=300, CH=128, CL=26, CR=8, CT=8, CB=18;
+// 두 그래프 모두 같은 좌표계를 쓴다. 지도를 덜 가리도록 폭을 줄이면서(익 지시 2026-08-08)
+// 좌표계도 같은 비율로 줄였다 — 픽셀 폭만 줄이면 글자가 그만큼 작아진다.
+const CW=240, CH=128, CL=26, CR=8, CT=8, CB=18;
 const xAt = i => CL + i*(CW-CL-CR)/(N-1);
 function frame(yAt, ticks, fmt){
   let s = '';
