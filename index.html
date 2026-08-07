@@ -712,6 +712,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
     font-variant-numeric:tabular-nums;white-space:nowrap}
   .ramp div{width:26px;text-align:center}
   .ramp b{display:block;height:9px;border-radius:1px;margin-bottom:2px;font-weight:400}
+  .leaflet-control-attribution{font-size:9.5px;padding:1px 6px;background:color-mix(in srgb,var(--panel) 82%,transparent)}
+  .leaflet-control-attribution a{color:var(--dim)}
   /* Leaflet 패널이 z-index 400, 컨트롤이 800 이라 캡션도 그 위로 올려야 보인다 */
   .cap{position:absolute;left:0;right:0;bottom:0;z-index:900;padding:8px 12px;font-size:10.5px;line-height:1.5;color:var(--dim);
     background:color-mix(in srgb,var(--panel) 90%,transparent);border-top:1px solid var(--line);backdrop-filter:blur(3px)}
@@ -772,12 +774,13 @@ const D = {"meta":{"years":[1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,20
 let idx = 0, timer = null, selSgg = null;
 const $ = id => document.getElementById(id);
 
+// 🔴 attributionControl 을 끄지 말 것 — OSM(ODbL)·CARTO 약관이 지도 위 저작자표시를 요구한다.
 // 휠 줌은 끈다 — 켜 두면 페이지를 스크롤하다 지도 위를 지날 때 지도가 줌아웃된다.
 // 확대·축소는 +/− 버튼과 더블클릭으로 한다.
 // ── 좌: 인구중심점 궤적 ─────────────────────────────────────────────
-const m1 = L.map('m1', {zoomControl:false, attributionControl:false, scrollWheelZoom:false});
+const m1 = L.map('m1', {zoomControl:false, scrollWheelZoom:false});
 L.control.zoom({position:'topleft'}).addTo(m1);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom:18}).addTo(m1);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom:18, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(m1);
 const SERIES = [['pop_tot_b','전체','#362C21'], ['pop_2030_m','청년 남성','#65ADC2'], ['pop_2030_f','청년 여성','#E84646']];
 const trails = {}, heads = {};
 for (const [k,nm,col] of SERIES){
@@ -789,9 +792,9 @@ for (const [k,nm,col] of SERIES){
   m1.fitBounds(L.latLngBounds(all).pad(0.45)); }
 
 // ── 우: 수도권 성비 ────────────────────────────────────────────────
-const m2 = L.map('m2', {zoomControl:false, attributionControl:false, scrollWheelZoom:false});
+const m2 = L.map('m2', {zoomControl:false, scrollWheelZoom:false});
 L.control.zoom({position:'topleft'}).addTo(m2);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {maxZoom:18}).addTo(m2);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {maxZoom:18, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(m2);
 // 성비 색: 100 미만 붉게(여초), 초과 푸르게(남초) — 원문 팔레트 계열
 function ratioColor(r){
   if (r == null) return '#e5e7eb';
@@ -944,6 +947,11 @@ $('ft').innerHTML = `<b>인구중심점</b>(center of population)은 한 집단�
   폐지·개편된 옛 시군구 코드(인천 남구→미추홀구, 부천 3구, 군→시 승격 등)는
   현행 경계로 이어 붙여 시계열 구멍을 없앴습니다.
   원문: <a href="https://www.pressian.com/pages/articles/2024110722251788361" style="color:inherit">박소현,
-  「심화되는 성별 갈등, 공간에서도 나타난다」, 프레시안 2024-11</a> (${D.meta.moves_to}년 자료 기준).`;
+  「심화되는 성별 갈등, 공간에서도 나타난다」, 프레시안 2024-11</a> (${D.meta.moves_to}년 자료 기준).
+  <br><br>
+  © 2026 박소현 (Sohyun Park). 코드와 페이지는 <a href="https://github.com/wherewindstay/gendered-space/blob/main/LICENSE"
+  style="color:inherit">MIT 라이선스</a>.
+  지도 라이브러리 <a href="https://leafletjs.com" style="color:inherit">Leaflet</a> © Vladimir Agafonkin (BSD-2-Clause).
+  소스: <a href="https://github.com/wherewindstay/gendered-space" style="color:inherit">github.com/wherewindstay/gendered-space</a>`;
 apply();
 </script></body></html>
