@@ -54,6 +54,16 @@ In 1998 the extremes were Ongjin-gun at 140.2 and Ilsan-gu at 85.1. By 2025 they
 - No build step and no framework: the charts are SVG written directly.
 - Text on the page is generated from the data, so the figures quoted in the introduction stay correct when a new year is added.
 
-## License
+## License and citation
 
-Code and page: MIT. Underlying statistics belong to Statistics Korea under its own terms. Base-map tiles © CARTO, © OpenStreetMap contributors.
+| What | License |
+|---|---|
+| Source code | [MIT](LICENSE) |
+| Written content, figures, analytical results | [CC BY 4.0](LICENSE-CONTENT) |
+| Source data | Terms of each provider (see Data above) |
+| Bundled Leaflet 1.9.4 | BSD-2-Clause, © Vladimir Agafonkin |
+| Base-map tiles | © CARTO, © OpenStreetMap contributors |
+
+Reuse is welcome. Attribution is a condition of the content license, not a courtesy — credit
+Sohyun Park and link back. If you use this in research, please cite it; GitHub's
+**Cite this repository** button reads [CITATION.cff](CITATION.cff) and will give you BibTeX.

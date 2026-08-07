@@ -20,6 +20,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-The underlying statistics are published by Statistics Korea (KOSIS) and remain
-subject to its terms of use. Base-map tiles are © CARTO and
-© OpenStreetMap contributors.
+This license covers the source code in this repository. The written content,
+figures and analytical results are licensed separately -- see LICENSE-CONTENT.
+Third-party components keep their own licenses; see the README.

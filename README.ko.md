@@ -54,6 +54,16 @@
 - 빌드 도구도 프레임워크도 쓰지 않았습니다. 그래프는 SVG 를 직접 그립니다.
 - 화면의 문구는 데이터에서 생성되므로, 연도가 추가돼도 도입부 수치가 어긋나지 않습니다.
 
-## 라이선스
+## 라이선스와 인용
 
-코드와 페이지는 MIT. 원자료는 통계청의 이용 조건을 따릅니다. 배경지도 타일 © CARTO, © OpenStreetMap contributors.
+| 무엇 | 라이선스 |
+|---|---|
+| 소스 코드 | [MIT](LICENSE) |
+| 글·그림·분석 결과 | [CC BY 4.0](LICENSE-CONTENT) |
+| 원자료 | 각 제공기관의 이용 조건 (위 「자료」 참조) |
+| 내장된 Leaflet 1.9.4 | BSD-2-Clause, © Vladimir Agafonkin |
+| 배경지도 타일 | © CARTO, © OpenStreetMap contributors |
+
+재사용은 환영합니다. 다만 **저작자표시는 콘텐츠 라이선스의 조건이지 예의가 아닙니다** —
+박소현을 밝히고 원본으로 링크해 주세요. 연구에 쓰신다면 인용해 주시기 바랍니다.
+GitHub 의 **Cite this repository** 버튼이 [CITATION.cff](CITATION.cff) 를 읽어 BibTeX 을 줍니다.
