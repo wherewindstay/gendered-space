@@ -59,7 +59,7 @@ In 1998 the extremes were Ongjin-gun at 140.2 and Ilsan-gu at 85.1. By 2025 they
 | What | License |
 |---|---|
 | Source code | [MIT](LICENSE) |
-| Written content, figures, analytical results | [CC BY 4.0](LICENSE-CONTENT) |
+| Written content, figures, analytical results | [CC BY 4.0](CONTENT-LICENSE.md) |
 | Source data | Terms of each provider (see Data above) |
 | Bundled Leaflet 1.9.4 | BSD-2-Clause, © Vladimir Agafonkin |
 | Base-map tiles | © CARTO, © OpenStreetMap contributors |
