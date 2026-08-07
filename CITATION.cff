@@ -13,8 +13,9 @@ keywords:
   - "South Korea"
   - "data visualization"
   - "spatial inequality"
-license: "MIT"
-license-url: "https://github.com/wherewindstay/gendered-space/blob/main/LICENSE-CONTENT"
+license:
+  - "MIT"
+  - "CC-BY-4.0"
 repository-code: "https://github.com/wherewindstay/gendered-space"
 url: "https://wherewindstay.github.io/gendered-space/"
 type: "software"
