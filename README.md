@@ -68,8 +68,7 @@ In 1998 the extremes were Ongjin-gun at 140.2 and Ilsan-gu at 85.1. By 2025 they
 
 To cite this work:
 
-> Park, S. (2026). *Young Men and Women Are Drifting Apart in Space (Korea, 1998-2025)* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21842363
+> Park, S. (2026). *Young Men and Women Are Drifting Apart in Space (South Korea, 1998-2025)* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21842363
 
-Reuse is welcome. Attribution is a condition of the content license, not a courtesy — credit
-Sohyun Park and link back. If you use this in research, please cite it; GitHub's
+Reuse is welcome. Please credit Sohyun Park and cite the work. GitHub's
 **Cite this repository** button reads [CITATION.cff](CITATION.cff) and will give you BibTeX.

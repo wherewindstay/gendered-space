@@ -68,7 +68,7 @@
 
 인용하실 때:
 
-> 박소현 (2026). *Young Men and Women Are Drifting Apart in Space (Korea, 1998-2025)* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21842363
+> 박소현 (2026). *Young Men and Women Are Drifting Apart in Space (South Korea, 1998-2025)* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21842363
 
 재사용은 환영합니다. 저작자표시 후 인용해 주시기 바랍니다.
 GitHub 의 **Cite this repository** 버튼이 [CITATION.cff](CITATION.cff) 를 읽어 BibTeX 을 줍니다.

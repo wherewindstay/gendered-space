@@ -15,7 +15,7 @@ indicate if changes were made.
 
 Suggested credit line:
 
-    Sohyun Park (2026), "Young Men and Women Are Drifting Apart in Space (Korea, 1998-2025)".
+    Sohyun Park (2026), "Young Men and Women Are Drifting Apart in Space (South Korea, 1998-2025)".
     https://github.com/wherewindstay/gendered-space -- CC BY 4.0
 
 What this license does NOT cover:
@@ -25,6 +25,5 @@ What this license does NOT cover:
     provider (Statistics Korea and others; see the README).
   - Third-party components bundled here, which keep their own licenses.
 
-Attribution is a condition of this license, not a courtesy. Reuse without
-credit is a licence violation, and reuse that presents this analysis as
-someone else's own work is also a matter of research integrity.
+Attribution is a condition of this license. Reuse without credit is a
+licence violation.
