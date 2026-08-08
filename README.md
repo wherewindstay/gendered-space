@@ -1,6 +1,6 @@
 **English** | [한국어](README.ko.md)
 
-# Young Men and Women Are Drifting Apart in Space (Korea, 1998–2025)
+# Young Men and Women Are Drifting Apart in Space (South Korea, 1998–2025)
 
 > ### **[▶ Open the map — wherewindstay.github.io/gendered-space](https://wherewindstay.github.io/gendered-space/)**
 >
