@@ -42,7 +42,7 @@ Centres of population for 1998–2023 come from the author's own `centroid_sgg.R
 - **Merged cities are counted once.** Where a city and its wards both appear in the source, the city row is dropped — but only in years where ward rows actually exist. Bucheon abolished its wards in 2016 and restored them in 2024, so the rule has to be applied year by year rather than by name.
 - **Old district codes are carried onto current boundaries** (Incheon Nam-gu → Michuhol-gu, Bucheon's three wards, five counties promoted to cities) so that moving the slider backwards does not open holes in the series. Two districts still begin late — Yeongtong-gu in 2003 and Ilsanseo-gu in 2005 — because they did not exist before then.
 - **The initial view of the right map excludes Ongjin-gun** from its extent. Ongjin's islands reach 124.7°E, and including them squeezes Seoul and Gyeonggi into a corner. Ongjin is still drawn; zoom out one step to see it.
-- **The centre of population is a summary, not a place.** Two very different distributions can share the same centre. It answers "which way did this group move" and nothing finer.
+- **The centre of population summarises a distribution rather than marking a place.** Two very different distributions can share the same centre, so it answers "which way did this group move" and nothing finer.
 
 ## Reading the sex ratio
 
