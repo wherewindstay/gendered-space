@@ -46,7 +46,7 @@ Centres of population for 1998–2023 come from the author's own `centroid_sgg.R
 
 ## Reading the sex ratio
 
-In 1998 the extremes were Ongjin-gun at 140.2 and Ilsan-gu at 85.1. By 2025 they were Ongjin-gun at 241.4 and Mapo-gu at 80.8. Seoul and its inner suburbs have tilted toward women; the border counties (Ongjin, Yeoncheon, Pocheon, Gapyeong) and the manufacturing belt (Icheon) toward men. Ongjin's figure reflects a small resident population alongside military and fishing employment, so it should be read as a ratio, not as a count.
+In 1998 the extremes were Ongjin-gun at 140.2 and Ilsan-gu at 85.1. By 2025 they were Ongjin-gun at 241.4 and Mapo-gu at 80.8. Seoul and its inner suburbs have tilted toward women; the border counties (Ongjin, Yeoncheon, Pocheon, Gapyeong) and the manufacturing belt (Icheon) toward men. Ongjin's figure is a ratio over a small resident population, with military and fishing employment on top of it.
 
 ## Technical notes
 
