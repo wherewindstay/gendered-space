@@ -861,7 +861,7 @@ const m1 = L.map('m1', {zoomControl:false, scrollWheelZoom:false});
 L.control.zoom({position:'topleft'}).addTo(m1);
 
 document.head.insertAdjacentHTML('beforeend','<style>.basemap-soft{filter:grayscale(.9) brightness(1.06) contrast(.9)}.basemap-faint{filter:grayscale(1) brightness(1.18) contrast(.75)}</style>');
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, className:'basemap-soft', attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자'}).addTo(m1);
+L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {maxZoom:18, className:'basemap-soft', attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자 · 타일 <a href="https://www.openstreetmap.de/">OSM Deutschland</a>'}).addTo(m1);
 const SERIES = [['pop_tot_b','#362C21'], ['pop_2030_m','#65ADC2'], ['pop_2030_f','#E84646']];
 const trails = {}, heads = {};
 for (const [k,col] of SERIES){
@@ -874,7 +874,7 @@ for (const [k,col] of SERIES){
 const m2 = L.map('m2', {zoomControl:false, scrollWheelZoom:false});
 L.control.zoom({position:'topleft'}).addTo(m2);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:18, className:'basemap-faint', attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자'}).addTo(m2);
+L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {maxZoom:18, className:'basemap-faint', attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자 · 타일 <a href="https://www.openstreetmap.de/">OSM Deutschland</a>'}).addTo(m2);
 
 function ratioColor(r){
   if (r == null) return '#e5e7eb';
